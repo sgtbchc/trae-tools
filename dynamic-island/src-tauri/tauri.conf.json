@@ -1,0 +1,46 @@
+{
+  "$schema": "https://raw.githubusercontent.com/nicehash/tauri/dev/crates/tauri-config-schema/schema.json",
+  "productName": "Trae Dynamic Island",
+  "version": "0.1.0",
+  "identifier": "com.trae.dynamic-island",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:1420",
+    "beforeDevCommand": "pnpm dev",
+    "beforeBuildCommand": "pnpm build"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "dynamic-island",
+        "title": "Trae Dynamic Island",
+        "width": 400,
+        "height": 220,
+        "x": 760,
+        "y": 0,
+        "decorations": false,
+        "transparent": true,
+        "alwaysOnTop": true,
+        "skipTaskbar": true,
+        "resizable": false,
+        "maximized": false,
+        "visible": true,
+        "focus": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}
